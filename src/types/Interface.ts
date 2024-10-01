@@ -13,7 +13,6 @@ export interface IAnimeLogoResult {
 export interface IAnimeLogoDataProps {
   tvdbID?: number | undefined;
   id: string | undefined;
-
 }
 
 export interface IAnimeByPageResult {
