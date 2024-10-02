@@ -2,25 +2,26 @@ import { Type, StatusType, NetworkType, YearType } from "./querys.js";
 
 export interface IAnimeLogoResult {
   Backgrounds: string[] | undefined;
-  Banners: string[] | undefined;
-  Cinemagraphs: string[] | undefined;
-  ClearArts: string[] | undefined;
   ClearLogos: string[] | undefined;
   Icons: string[] | undefined;
-  Posters: string[] | undefined;
 }
 
-export interface IAnimeLogoDataProps {
-  tvdbID?: number | undefined;
-  id: string | undefined;
+
+export interface IAnimePageInfo {
+  index: number;
+  title: string;
+  id: string;
+  startDate: string;
+  endDate: string;
+}
+
+interface extraPageInfo {
+  results: number | 'no results';
 }
 
 export interface IAnimeByPageResult {
-  name: string;
-  id: string;
-  url: string;
-  FirstAired: string;
-  LastAired: string;
+  animeResults: IAnimePageInfo[];
+  InformationPage: extraPageInfo;
 }
 
 export interface IAnimeLogoAdvSearch {
