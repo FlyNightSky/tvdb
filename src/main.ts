@@ -6,7 +6,7 @@ const PORT = 3000; // Or any port you'd like
 
 // Define your route
 app.get('/', async (req: Request, res: Response) => {
-  const animePage = await fetchAnimeLogoData(undefined, 305074); // Fetch anime data
+  const animePage = await fetchAnimeLogoData('fantastic-children'); // Fetch anime data
   req
   res.send(animePage);
 });

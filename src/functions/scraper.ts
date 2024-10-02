@@ -43,21 +43,21 @@ export async function scraper(url: string, type: 'page'| 'info'){
       $('#artwork-backgrounds > div a').each((index, element) => {
         const image = {
           index: index,
-          element: $(element).attr('href')
+          image: $(element).attr('href')
         }
         backgrounds.push(image);
       });
       $('#artwork-clearlogo > div a').each((index, element) => {
         const image = {
           index: index,
-          element: $(element).attr('href')
+          image: $(element).attr('href')
         }
         clearlogos.push(image);
       });
       $('#artwork-icons > div a').each((index, element) => {
         const image = {
           index: index,
-          element: $(element).attr('href')
+          image: $(element).attr('href')
         }
         icons.push(image);
       });
